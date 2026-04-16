@@ -6,7 +6,7 @@ A collection of small Terraform examples for AWS. Each numbered folder is a stan
 
 - Terraform installed (`terraform -version`)
 - An AWS account + credentials configured (for example via environment variables or an AWS profile)
-- Permissions to create resources like EC2, VPC, Security Groups, ALB, ASG, EIP
+- Permissions to create resources like EC2, VPC, Security Groups, ALB, ASG, EIP, RDS, SSM Parameter Store
 
 ## Repository structure
 
@@ -19,6 +19,7 @@ A collection of small Terraform examples for AWS. Each numbered folder is a stan
 - `7. AWS - Green & Blue`: ALB + Launch Template + Auto Scaling Group in a VPC (good base for blue/green-style iterations)
 - `8. AWS - Variables`: variables, locals, tags merging, and `.auto.tfvars` environments
 - `9. AWS - Exec Local`: `null_resource` + `local-exec` logging during apply
+- `10. AWS - Generate password & SSM Parameter Store`: `random` password → SSM `SecureString` → RDS MySQL uses it via data source
 
 Each folder also contains its own `README.md` with details.
 
