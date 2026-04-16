@@ -7,6 +7,10 @@ provider "aws" {
   region = var.region
 }
 
+locals {
+  project_name = "${var.common_tag["Project"]}-${var.common_tag["Environment"]}"
+}
+
 data "aws_ami" "latest_amazon_linux" {
   owners      = ["amazon"]
   most_recent = true
@@ -39,7 +43,8 @@ resource "aws_security_group" "security_group" {
   }
 
   tags = merge(var.common_tag, {
-    Name = "Security Group"
+    Name              = "Security Group"
+    Full_Project_Name = local.project_name
   })
 
 }
@@ -51,7 +56,8 @@ resource "aws_instance" "server" {
   monitoring             = var.enable_detailed_monitoring
 
   tags = merge(var.common_tag, {
-    Name = "Instance"
+    Name              = "Instance"
+    Full_Project_Name = local.project_name
   })
 }
 
@@ -59,6 +65,7 @@ resource "aws_eip" "static_ip" {
   instance = aws_instance.server.id
 
   tags = merge(var.common_tag, {
-    Name = "Static IP"
+    Name              = "Static IP"
+    Full_Project_Name = local.project_name
   })
 }
