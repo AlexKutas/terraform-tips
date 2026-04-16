@@ -1,6 +1,6 @@
-# Terraform AWS Lessons
+# Terraform AWS Examples
 
-A collection of small Terraform examples for AWS. Each numbered folder is a standalone lesson with its own `main.tf` (and sometimes `variables.tf`, `outputs.tf`, templates, or scripts).
+A collection of small Terraform examples for AWS. Each numbered folder is standalone with its own `main.tf` (and sometimes `variables.tf`, `outputs.tf`, templates, or scripts).
 
 ## Prerequisites
 
@@ -16,19 +16,20 @@ A collection of small Terraform examples for AWS. Each numbered folder is a stan
 - `4. AWS - Life Cicle & Output`: `lifecycle` settings + outputs + EIP
 - `5. AWS - Depends On`: explicit resource ordering via `depends_on`
 - `6. AWS - Data Source`: data sources (AMIs/AZs/account/region/VPCs) + sample VPC/subnets
-- `7. AWS - Green & Blue`: ALB + Launch Template + Auto Scaling Group in a VPC (good base for blue/green-style iterations)
+- `7. AWS - Green & Blue Deploy`: ALB + Launch Template + Auto Scaling Group in a VPC (base for blue/green-style deploys)
 - `8. AWS - Variables`: variables, locals, tags merging, and `.auto.tfvars` environments
 - `9. AWS - Exec Local`: `null_resource` + `local-exec` logging during apply
 - `10. AWS - Generate password & SSM Parameter Store`: `random` password → SSM `SecureString` → RDS MySQL uses it via data source
+- `11. AWS - Conditions & Lookups`: `env`-based ternary / `lookup()` / `count` / `dynamic` ingress + provider `default_tags`
 
 Each folder also contains its own `README.md` with details.
 
-## How to run any lesson
+## How to run any example
 
 From the repo root:
 
 ```bash
-cd "N. AWS - <Lesson Name>"
+cd "N. AWS - <Example Name>"
 terraform init
 terraform plan
 terraform apply
@@ -42,5 +43,5 @@ terraform destroy
 
 ## Notes / safety
 
-- These lessons create real AWS resources and may incur costs.
+- These examples create real AWS resources and may incur costs.
 - Prefer running `terraform destroy` when you’re done.
