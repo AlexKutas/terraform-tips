@@ -19,7 +19,7 @@ A collection of small Terraform examples for AWS. Each numbered folder is standa
 - `7. AWS - Green & Blue Deploy`: ALB + Launch Template + Auto Scaling Group in a VPC (base for blue/green-style deploys)
 - `8. AWS - Variables`: variables, locals, tags merging, and `.auto.tfvars` environments
 - `9. AWS - Exec Local`: `null_resource` + `local-exec` logging during apply
-- `10. AWS - Generate password & SSM Parameter Store`: `random` password → SSM `SecureString` → RDS MySQL uses it via data source
+- `10. AWS - RDS password from SSM`: `random` password → SSM `SecureString` → RDS MySQL uses it via data source
 - `11. AWS - Conditions & Lookups`: `env`-based ternary / `lookup()` / `count` / `dynamic` ingress + provider `default_tags`
 
 Each folder also contains its own `README.md` with details.

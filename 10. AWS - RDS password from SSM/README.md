@@ -1,4 +1,4 @@
-# 10. AWS - Generate password & SSM Parameter Store
+# 10. AWS - RDS password from SSM
 
 This example shows how to **generate a random password in Terraform**, store it in **AWS Systems Manager Parameter Store** as a **SecureString**, read it back with a **data source**, and use it as the **RDS MySQL master password**—without hard-coding secrets in `.tf` files.
 
@@ -22,7 +22,7 @@ This configuration uses the **`random`** provider in addition to **`aws`**. Run 
 ## How to run
 
 ```bash
-cd "10. AWS - Generate password & SSM Parameter Store"
+cd "10. AWS - RDS password from SSM"
 terraform init
 terraform plan
 terraform apply
