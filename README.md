@@ -22,6 +22,7 @@ A collection of small Terraform examples for AWS. Each numbered folder is standa
 - `10. AWS - RDS password from SSM`: `random` password → SSM `SecureString` → RDS MySQL uses it via data source
 - `11. AWS - Conditions & Lookups`: `env`-based ternary / `lookup()` / `count` / `dynamic` ingress + provider `default_tags`
 - `12. AWS - Count & For`: `count` from a list; splat `[*]` and `for` expressions in outputs (IAM users + EC2)
+- `13. AWS - Multiply AWS Regions & Accounts`: multiple `provider "aws"` aliases (`eu-central-1` + `us-east-1`), `provider =` on resources/data; optional `assume_role` (edit before real use)
 
 Each folder also contains its own `README.md` with details.
 
