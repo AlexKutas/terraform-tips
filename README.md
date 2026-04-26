@@ -21,6 +21,7 @@ A collection of small Terraform examples for AWS. Each numbered folder is standa
 - `9. AWS - Exec Local`: `null_resource` + `local-exec` logging during apply
 - `10. AWS - RDS password from SSM`: `random` password → SSM `SecureString` → RDS MySQL uses it via data source
 - `11. AWS - Conditions & Lookups`: `env`-based ternary / `lookup()` / `count` / `dynamic` ingress + provider `default_tags`
+- `12. AWS - Count & For`: `count` from a list; splat `[*]` and `for` expressions in outputs (IAM users + EC2)
 
 Each folder also contains its own `README.md` with details.
 
