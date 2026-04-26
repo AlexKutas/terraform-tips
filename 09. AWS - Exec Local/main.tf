@@ -1,8 +1,3 @@
-# ------------------------------------------------------------
-# Terraform using exec local
-# ------------------------------------------------------------
-
-
 provider "aws" {
   region = "eu-central-1"
 }
@@ -17,7 +12,7 @@ resource "null_resource" "get_start_time_playbook" {
   }
 
   provisioner "local-exec" {
-   command     ="echo Terrafom Start: $(date) | tee -a \"${local.path_to_logs_file}\""
+   command     = "echo Terrafom Start: $(date) | tee -a \"${local.path_to_logs_file}\""
    interpreter = ["bash", "-c"]
   }
 }

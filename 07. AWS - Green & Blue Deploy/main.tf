@@ -166,10 +166,10 @@ resource "aws_lb_listener" "listener" {
 # Auto Scaling Group
 # -------------------------
 resource "aws_autoscaling_group" "asg" {
-  name                = "web-asg-${aws_launch_template.web.name}"
-  min_size            = 2
-  max_size            = 2
-  desired_capacity    = 2
+  name             = "web-asg-${aws_launch_template.web.name}"
+  min_size         = 2
+  max_size         = 2
+  desired_capacity = 2
 
   vpc_zone_identifier = [
     aws_subnet.public_1.id,
