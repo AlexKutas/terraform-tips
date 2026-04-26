@@ -1,4 +1,4 @@
-# 9. AWS - Exec Local
+# 09. AWS - Exec Local
 
 This example demonstrates Terraform provisioners with `local-exec` and `null_resource` to run local shell commands during `apply`, and log execution details to a file.
 

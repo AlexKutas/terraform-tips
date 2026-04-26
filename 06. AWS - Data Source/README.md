@@ -1,4 +1,4 @@
-# 6. AWS - Data Source
+# 06. AWS - Data Source
 
 This example demonstrates Terraform **data sources** (querying AWS for information) alongside provisioning a small VPC + subnets.
 

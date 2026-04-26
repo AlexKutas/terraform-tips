@@ -1,4 +1,4 @@
-# 5. AWS - Depends On
+# 05. AWS - Depends On
 
 This example demonstrates explicit dependencies in Terraform using `depends_on`, forcing a specific creation order between resources.
 

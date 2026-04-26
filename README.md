@@ -10,15 +10,15 @@ A collection of small Terraform examples for AWS. Each numbered folder is standa
 
 ## Repository structure
 
-- `1. AWS - Resources`: minimal EC2 instance
-- `2. AWS - WebServer`: EC2 + Security Group + `user_data` from a template
-- `3. AWS - Dynamic Security Group`: `dynamic` ingress rules in a Security Group
-- `4. AWS - Life Cicle & Output`: `lifecycle` settings + outputs + EIP
-- `5. AWS - Depends On`: explicit resource ordering via `depends_on`
-- `6. AWS - Data Source`: data sources (AMIs/AZs/account/region/VPCs) + sample VPC/subnets
-- `7. AWS - Green & Blue Deploy`: ALB + Launch Template + Auto Scaling Group in a VPC (base for blue/green-style deploys)
-- `8. AWS - Variables`: variables, locals, tags merging, and `.auto.tfvars` environments
-- `9. AWS - Exec Local`: `null_resource` + `local-exec` logging during apply
+- `01. AWS - Resources`: minimal EC2 instance
+- `02. AWS - WebServer`: EC2 + Security Group + `user_data` from a template
+- `03. AWS - Dynamic Security Group`: `dynamic` ingress rules in a Security Group
+- `04. AWS - Life Cicle & Output`: `lifecycle` settings + outputs + EIP
+- `05. AWS - Depends On`: explicit resource ordering via `depends_on`
+- `06. AWS - Data Source`: data sources (AMIs/AZs/account/region/VPCs) + sample VPC/subnets
+- `07. AWS - Green & Blue Deploy`: ALB + Launch Template + Auto Scaling Group in a VPC (base for blue/green-style deploys)
+- `08. AWS - Variables`: variables, locals, tags merging, and `.auto.tfvars` environments
+- `09. AWS - Exec Local`: `null_resource` + `local-exec` logging during apply
 - `10. AWS - RDS password from SSM`: `random` password → SSM `SecureString` → RDS MySQL uses it via data source
 - `11. AWS - Conditions & Lookups`: `env`-based ternary / `lookup()` / `count` / `dynamic` ingress + provider `default_tags`
 - `12. AWS - Count & For`: `count` from a list; splat `[*]` and `for` expressions in outputs (IAM users + EC2)
@@ -30,7 +30,7 @@ Each folder also contains its own `README.md` with details.
 From the repo root:
 
 ```bash
-cd "N. AWS - <Example Name>"
+cd "01. AWS - Resources"   # or any other folder name from the list above (01–09 use a leading zero)
 terraform init
 terraform plan
 terraform apply

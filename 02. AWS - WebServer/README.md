@@ -1,4 +1,4 @@
-# 2. AWS - WebServer
+# 02. AWS - WebServer
 
 This example provisions an EC2-based web server and a Security Group, and bootstraps Apache via `user_data` rendered from a template.
 

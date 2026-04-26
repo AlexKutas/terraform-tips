@@ -1,4 +1,4 @@
-# 8. AWS - Variables
+# 08. AWS - Variables
 
 This example demonstrates Terraform input variables, locals, maps, and per-environment values using `*.auto.tfvars`.
 

@@ -1,4 +1,4 @@
-# 4. AWS - Life Cycle & Output
+# 04. AWS - Life Cycle & Output
 
 This example demonstrates Terraform `lifecycle` behavior (e.g. `create_before_destroy`, `ignore_changes`) and using `output` values.
 

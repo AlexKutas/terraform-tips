@@ -1,4 +1,4 @@
-# 1. AWS - Resources
+# 01. AWS - Resources
 
 This example shows a minimal Terraform deployment of a single EC2 instance in AWS.
 

@@ -1,4 +1,4 @@
-# 7. AWS - Green & Blue Deploy
+# 07. AWS - Green & Blue Deploy
 
 This example provisions a small highly-available web stack: VPC + public subnets, an **Application Load Balancer (ALB)**, a **Launch Template**, and an **Auto Scaling Group (ASG)**. That setup is a common base for **green/blue deployment**: you keep traffic on the ALB, publish new AMI or launch-template versions (a new “color”), register instances to the same target group or swap listeners, and cut over with minimal downtime. This folder shows the **single-stack baseline** (one ASG + one LT)—the infrastructure pattern you extend with a second stack for full blue/green.
 
@@ -34,7 +34,7 @@ Region: `eu-central-1` (Frankfurt).
 From the repo root:
 
 ```bash
-cd "7. AWS - Green & Blue Deploy"
+cd "07. AWS - Green & Blue Deploy"
 terraform init
 terraform plan
 terraform apply

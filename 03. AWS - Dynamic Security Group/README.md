@@ -1,4 +1,4 @@
-# 3. AWS - Dynamic Security Group
+# 03. AWS - Dynamic Security Group
 
 This example demonstrates Terraform `dynamic` blocks by generating multiple ingress rules inside a single Security Group.
 
